@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Toko Online Sederhana</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Toko Always Hanzz</h1>
+
+  <div id="daftarProduk"></div>
+
+  <div id="keranjangContainer">
+    <h2>Keranjang</h2>
+    <ul id="daftarKeranjang"></ul>
+    <p>Total: <span id="totalHarga">Rp0</span></p>
+    <button id="btnBayar" onclick="tampilkanPembayaran()" style="display:none;">Bayar Here</button>
+  </div>
+
+  <div id="pembayaranContainer" class="hidden">
+    <h2>Pembayaran</h2>
+    <p><strong>Bayar ke Dana:</strong> <span id="nomorDana">083822176542</span> <button onclick="copy('083822176542')">Salin Nomor</button></p>
+    <p><strong>Bayar via QRIS:</strong></p>
+    <img src="https://files.catbox.moe/s01pgf.jpg" alt="QRIS" />
+
+    <p>Upload bukti transfer:</p>
+    <input type="file" id="buktiTransfer" accept="image/*" />
+    <br />
+    <textarea id="catatan" placeholder="Tulis catatan jika ada..." rows="3" style="width:100%;"></textarea>
+    <br />
+    <button onclick="kirimWA()">Kirim Bukti Transfer via WhatsApp</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

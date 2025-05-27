@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+#daftarProduk {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.produk {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 160px;
+  text-align: center;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+}
+
+.produk img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#keranjangContainer, #pembayaranContainer {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
